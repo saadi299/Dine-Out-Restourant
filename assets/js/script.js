@@ -17,15 +17,17 @@ document.addEventListener("click",function(event){
 
 /*-----------------------Sticky Navbar-------------------------*/
 window.addEventListener("scroll",function(){
-    
-    if(this.pageYOffset>100){
-        console.log("if")
+    if(this.pageYOffset>400){
         document.querySelector(".header").classList.add("sticky");
-       
     }
     else{
-        console.log("else")
         document.querySelector(".header").classList.remove("sticky");
-       
     }
 })
+
+
+/*-----------------------Menu Tabs-------------------------*/
+function menuClick(e){
+    
+    console.log("click",e)
+}
